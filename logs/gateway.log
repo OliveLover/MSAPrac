@@ -1,0 +1,96 @@
+2024-09-10T00:03:14.286+09:00  INFO 16488 --- [gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-10T00:03:44.672+09:00  INFO 6672 --- [gateway] [main] com.msa.gateway.GatewayApplication       : The following 1 profile is active: "local"
+2024-09-10T00:03:45.363+09:00  INFO 6672 --- [gateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=cae45825-93b0-3722-9829-d0d44b5b378b
+2024-09-10T00:03:45.402+09:00  WARN 6672 --- [gateway] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-10T00:03:45.404+09:00  WARN 6672 --- [gateway] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-10T00:03:45.635+09:00  INFO 6672 --- [gateway] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8070 (http)
+2024-09-10T00:03:45.654+09:00  INFO 6672 --- [gateway] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-10T00:03:45.655+09:00  INFO 6672 --- [gateway] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-10T00:03:45.734+09:00  INFO 6672 --- [gateway] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-10T00:03:45.734+09:00  INFO 6672 --- [gateway] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1046 ms
+2024-09-10T00:03:46.775+09:00  INFO 6672 --- [gateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-09-10T00:03:46.911+09:00  WARN 6672 --- [gateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-09-10T00:03:46.920+09:00  INFO 6672 --- [gateway] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2024-09-10T00:03:46.973+09:00  INFO 6672 --- [gateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-09-10T00:03:46.997+09:00  INFO 6672 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-09-10T00:03:47.001+09:00  INFO 6672 --- [gateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-10T00:03:47.008+09:00  INFO 6672 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-09-10T00:03:47.008+09:00  INFO 6672 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-09-10T00:03:47.008+09:00  INFO 6672 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-09-10T00:03:47.008+09:00  INFO 6672 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-09-10T00:03:47.008+09:00  INFO 6672 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-09-10T00:03:47.008+09:00  INFO 6672 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-09-10T00:03:47.008+09:00  INFO 6672 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-09-10T00:03:47.244+09:00  INFO 6672 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-09-10T00:03:47.245+09:00  INFO 6672 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-09-10T00:03:47.247+09:00  INFO 6672 --- [gateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-09-10T00:03:47.248+09:00  INFO 6672 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1725894227247 with initial instances count: 0
+2024-09-10T00:03:47.251+09:00  INFO 6672 --- [gateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application GATEWAY with eureka with status UP
+2024-09-10T00:03:47.251+09:00  INFO 6672 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1725894227251, current=UP, previous=STARTING]
+2024-09-10T00:03:47.252+09:00  INFO 6672 --- [gateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/DESKTOP-BQRS6TJ.mshome.net:gateway:8070: registering service...
+2024-09-10T00:03:47.261+09:00  INFO 6672 --- [gateway] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8070 (http) with context path '/'
+2024-09-10T00:03:47.263+09:00  INFO 6672 --- [gateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8070
+2024-09-10T00:03:47.278+09:00  INFO 6672 --- [gateway] [main] com.msa.gateway.GatewayApplication       : Started GatewayApplication in 3.565 seconds (process running for 3.843)
+2024-09-10T00:03:47.323+09:00  INFO 6672 --- [gateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/DESKTOP-BQRS6TJ.mshome.net:gateway:8070 - registration status: 204
+2024-09-10T00:04:17.246+09:00  INFO 6672 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-09-10T00:04:17.247+09:00  INFO 6672 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-09-10T00:04:17.247+09:00  INFO 6672 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-09-10T00:04:17.247+09:00  INFO 6672 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-09-10T00:04:17.247+09:00  INFO 6672 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-09-10T00:04:17.247+09:00  INFO 6672 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-09-10T00:04:17.247+09:00  INFO 6672 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-09-10T00:04:17.285+09:00  INFO 6672 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-09-10T00:14:37.660+09:00  INFO 26220 --- [gateway] [main] com.msa.gateway.GatewayApplication       : The following 1 profile is active: "local"
+2024-09-10T00:14:38.333+09:00  INFO 26220 --- [gateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=826e8f35-5595-38d3-8db7-34700cd2633b
+2024-09-10T00:14:38.371+09:00  WARN 26220 --- [gateway] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-10T00:14:38.372+09:00  WARN 26220 --- [gateway] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-10T00:14:38.374+09:00  WARN 26220 --- [gateway] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-10T00:14:38.375+09:00  WARN 26220 --- [gateway] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-10T00:14:38.376+09:00  WARN 26220 --- [gateway] [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-10T00:14:39.009+09:00  INFO 26220 --- [gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2024-09-10T00:14:39.009+09:00  INFO 26220 --- [gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2024-09-10T00:14:39.009+09:00  INFO 26220 --- [gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2024-09-10T00:14:39.009+09:00  INFO 26220 --- [gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2024-09-10T00:14:39.009+09:00  INFO 26220 --- [gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2024-09-10T00:14:39.009+09:00  INFO 26220 --- [gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2024-09-10T00:14:39.009+09:00  INFO 26220 --- [gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2024-09-10T00:14:39.009+09:00  INFO 26220 --- [gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2024-09-10T00:14:39.009+09:00  INFO 26220 --- [gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2024-09-10T00:14:39.009+09:00  INFO 26220 --- [gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2024-09-10T00:14:39.009+09:00  INFO 26220 --- [gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2024-09-10T00:14:39.009+09:00  INFO 26220 --- [gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-09-10T00:14:39.009+09:00  INFO 26220 --- [gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2024-09-10T00:14:39.009+09:00  INFO 26220 --- [gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-09-10T00:14:39.243+09:00  INFO 26220 --- [gateway] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2024-09-10T00:14:39.466+09:00  INFO 26220 --- [gateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-09-10T00:14:39.493+09:00  WARN 26220 --- [gateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-09-10T00:14:39.543+09:00  INFO 26220 --- [gateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-09-10T00:14:39.564+09:00  INFO 26220 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-09-10T00:14:39.568+09:00  INFO 26220 --- [gateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-10T00:14:39.578+09:00  INFO 26220 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-09-10T00:14:39.578+09:00  INFO 26220 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-09-10T00:14:39.578+09:00  INFO 26220 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-09-10T00:14:39.578+09:00  INFO 26220 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-09-10T00:14:39.578+09:00  INFO 26220 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-09-10T00:14:39.578+09:00  INFO 26220 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-09-10T00:14:39.578+09:00  INFO 26220 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-09-10T00:14:39.875+09:00  INFO 26220 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-09-10T00:14:39.876+09:00  INFO 26220 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-09-10T00:14:39.877+09:00  INFO 26220 --- [gateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-09-10T00:14:39.879+09:00  INFO 26220 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1725894879878 with initial instances count: 0
+2024-09-10T00:14:39.882+09:00  INFO 26220 --- [gateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application GATEWAY with eureka with status UP
+2024-09-10T00:14:39.882+09:00  INFO 26220 --- [gateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1725894879882, current=UP, previous=STARTING]
+2024-09-10T00:14:39.883+09:00  INFO 26220 --- [gateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/DESKTOP-BQRS6TJ.mshome.net:gateway:8070: registering service...
+2024-09-10T00:14:39.950+09:00  INFO 26220 --- [gateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY/DESKTOP-BQRS6TJ.mshome.net:gateway:8070 - registration status: 204
+2024-09-10T00:14:40.007+09:00  INFO 26220 --- [gateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8070 (http)
+2024-09-10T00:14:40.008+09:00  INFO 26220 --- [gateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8070
+2024-09-10T00:14:40.025+09:00  INFO 26220 --- [gateway] [main] com.msa.gateway.GatewayApplication       : Started GatewayApplication in 3.302 seconds (process running for 3.63)
+2024-09-10T00:15:09.880+09:00  INFO 26220 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-09-10T00:15:09.881+09:00  INFO 26220 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-09-10T00:15:09.881+09:00  INFO 26220 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-09-10T00:15:09.881+09:00  INFO 26220 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-09-10T00:15:09.881+09:00  INFO 26220 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-09-10T00:15:09.881+09:00  INFO 26220 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2024-09-10T00:15:09.881+09:00  INFO 26220 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-09-10T00:15:09.905+09:00  INFO 26220 --- [gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-09-10T00:19:39.586+09:00  INFO 26220 --- [gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

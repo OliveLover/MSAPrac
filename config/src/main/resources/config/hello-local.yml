@@ -1,0 +1,19 @@
+logging:
+  file:
+    name: logs/api.log
+  level:
+    root: info
+    org.msa.item: debug
+  logback:
+    rolling policy:
+      max-file-size: 500MB
+      max-history: 10
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-register: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka

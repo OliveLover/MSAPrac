@@ -1,0 +1,13 @@
+server:
+  port: 0
+spring:
+  application:
+    name: hello
+  profiles:
+    active: local
+  cloud:
+    config:
+      uri: http://localhost:8080
+    loadbalancer:
+      ribbon:
+        enabled: false
